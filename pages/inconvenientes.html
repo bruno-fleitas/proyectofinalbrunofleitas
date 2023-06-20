@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/js/bootstrap.min.js"> -->
+<link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+    <!-- cabezera -->
+    <header>
+        <div class="logo">bruno jeans</div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="/index.html" class="active">inicio</a>
+                </li>
+                <li><a href="./galeria.html">galeria</a>
+                </li>
+                <li><a href="./inconvenientes.html">inconvenientes</a>
+                </li>
+                <li><a href="./nosotros.html">nosotros</a>
+                </li>
+                <li><a href="./redes.html">redes</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function() {
+        navBar = document.querySelector(".nav-bar");
+        navBar.classList.toggle("active");
+    
+        }
+    </script>
+<!-- formulario -->
+<div class="div-form">
+<form>
+    <h2 class="login">login</h2>
+    <span class="lane"></span>
+    <p class="p-email">coloca tu email</p>
+    <div class="input-group">
+        <label for="email">email</label>
+        <input type="email" name="email" placeholder="email" id="email">
+        <label for="contraseña">contraseña</label>
+        <input type="password" name="password" placeholder="contraseña" id="contraseña">
+
+        <div class="form-txt">
+        <a href="#">polica de privacidad</a>
+        <a href="#">terminos y condiciones</a>
+    </div>
+        <input class="btn" type="submit" value="enviar" >
+    </div>
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/js/bootstrap.min.js"> -->
+<link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+    <!-- cabezera -->
+    <header>
+        <div class="logo">bruno jeans</div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="/index.html" class="active">inicio</a>
+                </li>
+                <li><a href="./galeria.html">galeria</a>
+                </li>
+                <li><a href="./inconvenientes.html">inconvenientes</a>
+                </li>
+                <li><a href="./nosotros.html">nosotros</a>
+                </li>
+                <li><a href="./redes.html">redes</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function() {
+        navBar = document.querySelector(".nav-bar");
+        navBar.classList.toggle("active");
+    
+        }
+    </script>
+
+    <div class="contenido">
+    <h1 class="nosotros">acerca de nosotros</h1>
+    <div class="caja">
+        <div>
+            <h2 class="acerca">QUIENES SOMOS</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Blanditiis exercitationem perspiciatis illo possimus obcaecati iusto, numquam adipisci
+            voluptatem voluptas reprehenderit ipsam velit cum doloremque quam sit
+            culpa nihil alias magnam.</p>
+            </div>
+            <div>
+                <img src="/img/nosotros.jpg" alt="" width="100%">
+            </div>
+        </div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In odit at ea, facilis enim ipsam, aut neque, itaque ipsa
+            laborum quidem? Praesentium eos perspiciatis error. Ipsum maxime deserunt harum explicabo!</p>
+</body>
+</html>
